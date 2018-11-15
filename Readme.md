@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [navBarLayout.css](./CS/NavBarResponsive/Content/navBarLayout.css)
+* [site.js](./CS/NavBarResponsive/Content/site.js) (VB: [site.js](./VB/NavBarResponsive/Content/site.js))
+* [SideBar.ascx](./CS/NavBarResponsive/Shared/SideBar.ascx) (VB: [SideBar.ascx](./VB/NavBarResponsive/Shared/SideBar.ascx))
+* **[Site.master](./CS/NavBarResponsive/Shared/Site.master) (VB: [Site.master](./VB/NavBarResponsive/Shared/Site.master))**
+<!-- default file list end -->
 # Bootstrap Controls for ASP.NET Web Forms - How to implement a responsive side bar
 
 
