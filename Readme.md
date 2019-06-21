@@ -7,6 +7,9 @@
 * **[Site.master](./CS/NavBarResponsive/Shared/Site.master) (VB: [Site.master](./VB/NavBarResponsive/Shared/Site.master))**
 <!-- default file list end -->
 # Bootstrap Controls for ASP.NET Web Forms - How to implement a responsive side bar
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t605275)**
+<!-- run online end -->
 
 
 <p>This example shows how to implement a simplified version of the responsive side bar from our <a href="https://demos.devexpress.com/bootstrap/">online Bootstrap demos</a>.<br>The required layout is implemented in the following files:<br><br><strong>1. "Shared/Site.master"<br></strong>This is a Master Page where the basic web site layout is implemented. It also contains the side bar element:</p>
