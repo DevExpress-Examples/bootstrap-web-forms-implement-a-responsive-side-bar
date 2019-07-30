@@ -8,7 +8,7 @@
 <!-- default file list end -->
 # Bootstrap Controls for ASP.NET Web Forms - How to implement a responsive side bar
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t605275)**
+**[[Run Online]](https://codecentral.devexpress.com/t605275/)**
 <!-- run online end -->
 
 
