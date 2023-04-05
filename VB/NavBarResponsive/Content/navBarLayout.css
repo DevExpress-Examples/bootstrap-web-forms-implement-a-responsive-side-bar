@@ -1,0 +1,407 @@
+﻿html, body, form {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    margin-top: 90px;
+    min-width: 300px;
+}
+
+#navbar {
+    background: #FFF;
+    -webkit-box-shadow: 0px 0px 62px -5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 62px -5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 62px -5px rgba(0,0,0,0.15);
+    height: 80px;
+    border: 0;
+    padding: 0;
+}
+
+    #navbar .navbar-brand > * {
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #navbar .navbar-brand {
+        padding: 0;
+    }
+
+    #navbar .navbar-toggler {
+        width: 80px;
+        height: 80px;
+        background: #007bff;
+        border-radius: 0;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        margin-right: 24px;
+    }
+
+        #navbar .navbar-toggler:before,
+        #navbar .navbar-toggler .navbar-toggler-icon,
+        #navbar .navbar-toggler:after {
+            content: '';
+            background: #fff;
+            height: 4px;
+            width: 36px;
+            display: block;
+            margin: 0 auto;
+            transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+        }
+
+        #navbar .navbar-toggler .navbar-toggler-icon,
+        #navbar .navbar-toggler:after {
+            margin-top: 5px;
+        }
+
+.show-nav #navbar .navbar-toggler:before {
+    transform: translateY(9px) rotate(135deg);
+    -webkit-transform: translateY(9px) rotate(135deg);
+    -moz-transform: translateY(9px) rotate(135deg);
+}
+
+.show-nav #navbar .navbar-toggler-icon {
+    transform: scale(0);
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+}
+
+.show-nav #navbar .navbar-toggler:after {
+    transform: translateY(-9px) rotate(-135deg);
+    -moz-transform: translateY(-9px) rotate(-135deg);
+    -webkit-transform: translateY(-9px) rotate(-135deg);
+}
+
+#navbar .logo h3 {
+    margin-top: 16px;
+    margin-bottom: 0;
+    line-height: 1.1;
+    font-weight: bold;
+    font-size: 29px;
+}
+
+    #navbar .logo h3 .badge {
+        font-size: 0.4em;
+        vertical-align: top;
+    }
+
+#navbar .logo h4 {
+    margin-top: 5px;
+    line-height: 1.1;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#navbar .logo h3 a {
+    color: #666666;
+    text-decoration: none;
+}
+
+#navbar .logo h4 a {
+    color: #bababa;
+    text-decoration: none;
+}
+
+#navbar .nav-header .nav-item {
+    margin: 0;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 31px 20px 21px 20px;
+    border: 0;
+    background-image: none;
+    vertical-align: middle;
+    line-height: 28px !important;
+}
+
+    #navbar .nav-header .nav-item:hover {
+        background: transparent;
+    }
+
+
+#sidebar {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    padding: 0;
+    background: #fff;
+    display: block;
+    width: 253px;
+    transition: width 500ms;
+}
+
+    #sidebar .sidebar-body {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        border-right: 1px solid #e3e3e3;
+    }
+
+    #sidebar .nav {
+        text-transform: none;
+    }
+
+@media (max-height: 420px) {
+    #navbar .nav-header {
+        display: flex !important;
+    }
+
+    body #navbar .nav-header .nav-item {
+        display: block !important;
+    }
+
+    body #sidebar .sidebar-body {
+        bottom: 0;
+    }
+}
+
+#sidebar #navTreeView {
+    font-size: 14px;
+}
+
+    #sidebar #navTreeView ul {
+        overflow: hidden;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+
+    #sidebar #navTreeView li > a {
+        border-radius: 0;
+        padding-left: 25px;
+        font-size: 16px;
+        border: 0;
+        background-image: none;
+        text-shadow: none;
+        padding-top: 12px;
+        padding-bottom: 8px;
+    }
+
+    #sidebar #navTreeView li:not(.active) > a:hover {
+        background: #e5e5e5;
+    }
+
+    #sidebar #navTreeView li.active > a {
+        color: #fff;
+    }
+
+    #sidebar #navTreeView ul > li ul > li > a {
+        font-size: 14px;
+        padding-left: 45px;
+    }
+
+    #sidebar #navTreeView > ul.nav ul.nav {
+        margin: 0;
+    }
+
+    #sidebar #navTreeView .image {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #sidebar #navTreeView .badge {
+        float: right;
+        text-transform: uppercase;
+    }
+
+#sidebar .dxbs-tree > ul.nav li {
+    margin-left: 0;
+}
+
+#navbar .nav-header > .nav-item + .nav-item,
+#navbar .nav-header > .nav-item + .nav-item:hover {
+    color: #ffffff;
+}
+
+    #navbar .nav-header > .nav-item + .nav-item + .nav-item,
+    #navbar .nav-header > .nav-item + .nav-item + .nav-item:hover {
+        color: #ffffff;
+    }
+
+    #navbar .nav-header > .nav-item + .nav-item + .nav-item {
+        width: 80px;
+        text-align: center;
+    }
+
+@media (max-width: 575px) {
+
+    #navbar .navbar-toggler {
+        margin-right: 18px;
+    }
+    #navbar .nav-header > .nav-item + .nav-item + .nav-item {
+        width: auto;
+    }
+}
+
+.main {
+    min-height: 100% !important;
+    padding: 0 !important;
+}
+
+#content {
+    margin-left: 253px;
+    padding-right: 25px;
+    transition: margin-left 500ms, width 500ms;
+}
+
+@media (min-width: 992px) { /* md, lg*/
+    #content {
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+
+    #sidebar .dxbs-tree .image {
+        display: none;
+    }
+
+    body.collapse-nav #sidebar {
+        width: 80px;
+    }
+
+    body.collapse-nav #content {
+        margin-left: 80px;
+        width: calc(100% - 80px);
+    }
+
+    body.collapse-nav #sidebar #navTreeView {
+        margin-top: 0;
+    }
+
+        body.collapse-nav #sidebar #navTreeView li > a {
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+
+        body.collapse-nav #sidebar #navTreeView li.active > a,
+        body.collapse-nav #sidebar #navTreeView li.active-parent > a {
+            background: transparent;
+        }
+
+        body.collapse-nav #sidebar #navTreeView .image {
+            display: inline-block;
+        }
+
+            body.collapse-nav #sidebar #navTreeView .image + span,
+            body.collapse-nav #sidebar #navTreeView .badge {
+                display: none;
+            }
+
+        body.collapse-nav #sidebar #navTreeView li ul {
+            display: none;
+        }
+}
+
+@media (max-width: 991px) { /* xxs, xs, sm */
+    #content {
+        padding-left: 25px;
+    }
+
+    body.show-nav #sidebar {
+        width: 250px;
+    }
+
+        body.show-nav #sidebar #navTreeView {
+            margin-top: 30px;
+            min-width: 240px;
+        }
+
+            body.show-nav #sidebar #navTreeView .image {
+                display: none;
+            }
+
+                body.show-nav #sidebar #navTreeView .image + span {
+                    display: inline;
+                }
+
+            body.show-nav #sidebar #navTreeView .badge {
+                display: inline-block;
+            }
+
+            body.show-nav #sidebar #navTreeView li ul {
+                display: block;
+            }
+
+    body.show-nav #content {
+        margin-left: 250px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) { /* xs, sm */
+    #sidebar {
+        width: 80px;
+    }
+
+        #sidebar #navTreeView {
+            margin-top: 0;
+        }
+
+            #sidebar #navTreeView .image + span,
+            #sidebar #navTreeView .badge {
+                display: none;
+            }
+
+            #sidebar #navTreeView li ul {
+                display: none;
+            }
+
+    #content {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #sidebar > .sidebar-body {
+        bottom: 115px;
+    }
+}
+
+@media (max-width: 575px) {
+    #sidebar {
+        width: 0;
+    }
+
+        #sidebar .sidebar-body {
+            bottom: 114px;
+        }
+
+    #content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #sidebar #navTreeView .image {
+        display: none;
+    }
+
+    #sidebar #bottomNav a .image {
+        display: none;
+    }
+
+        #sidebar #bottomNav a .image + span {
+            display: inline;
+            line-height: 36px;
+        }
+}
