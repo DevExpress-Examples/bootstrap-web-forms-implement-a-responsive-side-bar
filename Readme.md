@@ -31,7 +31,7 @@ In the master page ([Site.master](./CS/NavBarResponsive/Shared/Site.master)) add
 
 Implement the side bar user control ([SideBar.ascx](./CS/NavBarResponsive/Shared/SideBar.ascx)) based on the DevExpress [BootstrapTreeView](https://demos.devexpress.com/Bootstrap/Navigation/TreeView.aspx) control. Specify the `ID` property (`navTreeView`) and set the `ClientIDMode` property to `Static`. This `ID` is used to apply the CSS classes ([navBarLayout.css](./CS/NavBarResponsive/Content/navBarLayout.css)). 
 
-To collapse the side bar, handle the client-side [BootstrapClientTreeView](https://documentation.devexpress.com/AspNetBootstrap/DevExpress.Web.Bootstrap.Scripts.BootstrapClientTreeView.members).[NodeClick](https://documentation.devexpress.com/AspNet/DevExpress.Web.Scripts.ASPxClientTreeView.NodeClick.event) event. In the handler, hide the side bar depending on window size. ([site.js](./CS/NavBarResponsive/Content/site.js))
+To collapse the side bar, handle the client-side [BootstrapClientTreeView](https://docs.devexpress.com/AspNetBootstrap/js-BootstrapClientTreeView._members).[NodeClick](https://docs.devexpress.com/AspNet/js-ASPxClientTreeView.NodeClick) event. In the handler, hide the side bar depending on window size. ([site.js](./CS/NavBarResponsive/Content/site.js))
 
 ```html
 <dx:BootstrapTreeView runat="server" ID="navTreeView" ClientIDMode="Static" ClientInstanceName="navTreeView" ShowExpandButtons="false" >
