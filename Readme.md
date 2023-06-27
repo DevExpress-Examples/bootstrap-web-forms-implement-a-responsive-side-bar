@@ -57,7 +57,7 @@ Add the side bar user control in the master page:
 
 ## Files to Review
 
-* [Site.master](./CS/NavBarResponsive/Shared/Site.master) (VB: [Site.master](./VB/NavBarResponsive/Shared/Site.master))
+* [Site.master](./CS/NavBarResponsive/Shared/Site.master)
 * [navBarLayout.css](./CS/NavBarResponsive/Content/navBarLayout.css)
-* [site.js](./CS/NavBarResponsive/Content/site.js) (VB: [site.js](./VB/NavBarResponsive/Content/site.js))
-* [SideBar.ascx](./CS/NavBarResponsive/Shared/SideBar.ascx) (VB: [SideBar.ascx](./VB/NavBarResponsive/Shared/SideBar.ascx))
+* [site.js](./CS/NavBarResponsive/Content/site.js)
+* [SideBar.ascx](./CS/NavBarResponsive/Shared/SideBar.ascx)
