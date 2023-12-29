@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Bootstrap Controls for ASP.NET Web Forms - How to implement a responsive side bar
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128549035/)**
-<!-- run online end -->
 
 
 This example shows how to implement a simplified version of the responsive side bar from our [online Bootstrap demos](https://demos.devexpress.com/bootstrap/).
